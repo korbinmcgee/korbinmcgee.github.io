@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bike Sales - Korbin's Bicycle Shop</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/slicknav.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/jquery.slicknav.min.js"></script>
+
+  <!-- 
+    Developer: Korbin McGee
+    University: Southern Illinois University
+    Page: Bike Sales
+    Date Created: September 11, 2025
+  -->
+</head>
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rental.html">Rentals</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>Bike Sales</h1>
+  <p>We offer a wide range of bikes for every type of rider—from casual cruisers to competitive racers.</p>
+
+  <div class="column">
+    <h2>Road Bikes</h2>
+    <h3>Velocity Pro</h3>
+    <p>Lightweight carbon frame, perfect for long-distance speed.</p>
+    <h3>City Sprint</h3>
+    <p>Affordable and efficient for urban commuting.</p>
+  </div>
+
+  <div class="column">
+    <h2>Hybrid Bikes</h2>
+    <h3>Eco Glide</h3>
+    <p>Combines comfort and performance for everyday use.</p>
+    <h3>Pathfinder</h3>
+    <p>Versatile design for both pavement and trails.</p>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 Korbin's Bicycle Shop</p>
+  </footer>
+
+  <script>
+    $(function(){
+      $('#menu').slicknav();
+    });
+  </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Korbin's Bicycle Shop</title>
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/slicknav.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="scripts/jquery.slicknav.min.js"></script>
+
+  <!-- 
+    Developer: Korbin McGee
+    University: Southern Illinois University
+    Page: Contact
+    Date Created: September 11, 2025
+  -->
+</head>
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="rental.html">Rentals</a></li>
+      <li><a href="sales.html">Sales</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <h1>Contact Us</h1>
+  <p>We’d love to hear from you! Reach out with questions, feedback, or service requests.</p>
+
+  <address>
+    <strong>Korbin's Bicycle Shop</strong><br>
+    123 Cycle Lane<br>
+    Carbondale, IL 62901<br>
+    Phone: (618) 555-0123<br>
+    Email: <a href="mailto:info@korbinsbikeshop.com">info@korbinsbikeshop.com</a>
+  </address>
+
+  <form action="#" method="post">
+    <label for="name">Name:</label><br>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label><br>
+    <input type="email" id="email" name="email"><br><br>
+
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+
+    <input type="submit" value="Send Message">
+  </form>
+
+  <footer>
+    <p>&copy; 2025 Korbin's Bicycle Shop</p>
+  </footer>
+
+  <script>
+    $(function(){
+      $('#menu').slicknav();
+    });
+  </script>
+</body>
+</html>

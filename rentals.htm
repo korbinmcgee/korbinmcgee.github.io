@@ -14,10 +14,11 @@
     University: Southern Illinois University
     Page: Bike Rentals
     Date Created: September 7, 2025
-    Date Updated: September 11, 2025
+    Date Updated: September 28, 2025
   -->
 </head>
 <body>
+  <!-- Navigation Menu -->
   <nav>
     <ul id="menu">
       <li><a href="index.html">Home</a></li>
@@ -28,9 +29,11 @@
     </ul>
   </nav>
 
+  <!-- Page Header -->
   <h1>Bike Rentals</h1>
   <p>Explore your city with our rental bikes perfect for day trips or week-long adventures.</p>
 
+  <!-- Responsive Columns -->
   <div class="column">
     <h2>Street Bikes</h2>
     <h3>Urban Cruiser</h3>
@@ -47,6 +50,7 @@
     <p>Great grip and control for steep climbs and descents.</p>
   </div>
 
+  <!-- Pricing Section -->
   <h2>Pricing</h2>
   <ul>
     <li>Daily Rental: $25</li>
@@ -55,16 +59,22 @@
     <li>Lock: Included</li>
   </ul>
 
+  <!-- Rental Terms -->
   <h2>Rental Terms</h2>
   <p>All rentals require a valid ID and signed waiver. Bikes must be returned clean and undamaged. Late returns incur a $10/hour fee.</p>
 
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Korbin's Bicycle Shop</p>
   </footer>
 
+  <!-- SlickNav Initialization -->
   <script>
     $(function(){
-      $('#menu').slicknav();
+      $('#menu').slicknav({
+        prependTo: 'nav',
+        label: ''
+      });
     });
   </script>
 </body>

@@ -14,9 +14,11 @@
     University: Southern Illinois University
     Page: Contact
     Date Created: September 11, 2025
+    Date Updated: September 28, 2025
   -->
 </head>
 <body>
+  <!-- Navigation Menu -->
   <nav>
     <ul id="menu">
       <li><a href="index.html">Home</a></li>
@@ -27,9 +29,11 @@
     </ul>
   </nav>
 
+  <!-- Page Header -->
   <h1>Contact Us</h1>
   <p>We’d love to hear from you! Reach out with questions, feedback, or service requests.</p>
 
+  <!-- Contact Info -->
   <address>
     <strong>Korbin's Bicycle Shop</strong><br>
     123 Cycle Lane<br>
@@ -38,27 +42,10 @@
     Email: <a href="mailto:info@korbinsbikeshop.com">info@korbinsbikeshop.com</a>
   </address>
 
+  <!-- Contact Form -->
   <form action="#" method="post">
     <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name"><br><br>
+    <input type="text" id="name" name="name" required><br><br>
 
     <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email"><br><br>
-
-    <label for="message">Message:</label><br>
-    <textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
-
-    <input type="submit" value="Send Message">
-  </form>
-
-  <footer>
-    <p>&copy; 2025 Korbin's Bicycle Shop</p>
-  </footer>
-
-  <script>
-    $(function(){
-      $('#menu').slicknav();
-    });
-  </script>
-</body>
-</html>
+    <input type="email" id="email" name="email" required>

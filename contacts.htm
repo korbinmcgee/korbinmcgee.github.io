@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Us - Korbin's Bicycle Shop</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/slicknav.css">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/slicknav.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="scripts/jquery.slicknav.min.js"></script>
 
@@ -14,7 +15,7 @@
     University: Southern Illinois University
     Page: Contact
     Date Created: September 11, 2025
-    Date Updated: September 28, 2025
+    Date Updated: October 12, 2025
   -->
 </head>
 <body>
@@ -29,23 +30,46 @@
     </ul>
   </nav>
 
+  <!-- Main Graphic -->
+  <img src="images/main-bike.jpg" alt="Main shop graphic" id="mainGraphic" />
+
   <!-- Page Header -->
   <h1>Contact Us</h1>
   <p>We’d love to hear from you! Reach out with questions, feedback, or service requests.</p>
 
   <!-- Contact Info -->
   <address>
-    <strong>Korbin's Bicycle Shop</strong><br>
-    123 Cycle Lane<br>
-    Carbondale, IL 62901<br>
-    Phone: (618) 555-0123<br>
+    <strong>Korbin's Bicycle Shop</strong><br />
+    123 Cycle Lane<br />
+    Carbondale, IL 62901<br />
+    Phone: (618) 555-0123<br />
     Email: <a href="mailto:info@korbinsbikeshop.com">info@korbinsbikeshop.com</a>
   </address>
 
   <!-- Contact Form -->
   <form action="#" method="post">
-    <label for="name">Name:</label><br>
-    <input type="text" id="name" name="name" required><br><br>
+    <label for="name">Name:</label><br />
+    <input type="text" id="name" name="name" required /><br /><br />
 
-    <label for="email">Email:</label><br>
-    <input type="email" id="email" name="email" required>
+    <label for="email">Email:</label><br />
+    <input type="email" id="email" name="email" required /><br /><br />
+
+    <label for="message">Message:</label><br />
+    <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+    <input type="submit" value="Send Message" />
+  </form>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Korbin's Bicycle Shop</p>
+  </footer>
+
+  <!-- SlickNav Initialization -->
+  <script>
+    $(function () {
+      $('#menu').slicknav({ prependTo: 'nav', label: '' });
+    });
+  </script>
+</body>
+</html>

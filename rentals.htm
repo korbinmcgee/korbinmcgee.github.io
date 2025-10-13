@@ -1,24 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bike Rentals - Korbin's Bicycle Shop</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/slicknav.css">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/slicknav.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="scripts/jquery.slicknav.min.js"></script>
-
-  <!-- 
-    Developer: Korbin McGee
-    University: Southern Illinois University
-    Page: Bike Rentals
-    Date Created: September 7, 2025
-    Date Updated: September 28, 2025
-  -->
 </head>
 <body>
-  <!-- Navigation Menu -->
   <nav>
     <ul id="menu">
       <li><a href="index.html">Home</a></li>
@@ -29,11 +21,11 @@
     </ul>
   </nav>
 
-  <!-- Page Header -->
+  <img src="images/main-bike.jpg" alt="Main shop graphic" id="mainGraphic" />
+
   <h1>Bike Rentals</h1>
   <p>Explore your city with our rental bikes perfect for day trips or week-long adventures.</p>
 
-  <!-- Responsive Columns -->
   <div class="column">
     <h2>Street Bikes</h2>
     <h3>Urban Cruiser</h3>
@@ -50,7 +42,6 @@
     <p>Great grip and control for steep climbs and descents.</p>
   </div>
 
-  <!-- Pricing Section -->
   <h2>Pricing</h2>
   <ul>
     <li>Daily Rental: $25</li>
@@ -59,22 +50,16 @@
     <li>Lock: Included</li>
   </ul>
 
-  <!-- Rental Terms -->
   <h2>Rental Terms</h2>
   <p>All rentals require a valid ID and signed waiver. Bikes must be returned clean and undamaged. Late returns incur a $10/hour fee.</p>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Korbin's Bicycle Shop</p>
   </footer>
 
-  <!-- SlickNav Initialization -->
   <script>
-    $(function(){
-      $('#menu').slicknav({
-        prependTo: 'nav',
-        label: ''
-      });
+    $(function () {
+      $('#menu').slicknav({ prependTo: 'nav', label: '' });
     });
   </script>
 </body>

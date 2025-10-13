@@ -1,20 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bike Sales - Korbin's Bicycle Shop</title>
-  <link rel="stylesheet" href="styles/styles.css">
-  <link rel="stylesheet" href="styles/slicknav.css">
+  <link rel="stylesheet" href="styles/styles.css" />
+  <link rel="stylesheet" href="styles/slicknav.css" />
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="scripts/jquery.slicknav.min.js"></script>
-
-  <!-- 
-    Developer: Korbin McGee
-    University: Southern Illinois University
-    Page: Bike Sales
-    Date Created: September 11, 2025
-  -->
 </head>
 <body>
   <nav>
@@ -27,8 +21,12 @@
     </ul>
   </nav>
 
+  <img src="images/main-bike.jpg" alt="Main shop graphic" id="mainGraphic" />
+
   <h1>Bike Sales</h1>
   <p>We offer a wide range of bikes for every type of rider—from casual cruisers to competitive racers.</p>
+
+  <iframe width="100%" height="400" src="https://www.youtube.com/embed/hQI1a2yk6go?autoplay=1&mute=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
   <div class="column">
     <h2>Road Bikes</h2>
@@ -51,7 +49,7 @@
   </footer>
 
   <script>
-    $(function(){
+    $(function () {
       $('#menu').slicknav();
     });
   </script>

@@ -47,17 +47,74 @@
   </address>
 
   <!-- Contact Form -->
-  <form action="#" method="post">
-    <label for="name">Name:</label><br />
-    <input type="text" id="name" name="name" required /><br /><br />
-
+  <form action="response.html" method="get">
     <label for="email">Email:</label><br />
     <input type="email" id="email" name="email" required /><br /><br />
 
-    <label for="message">Message:</label><br />
-    <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+    <label for="password">Password:</label><br />
+    <input type="password" id="password" name="password" required /><br /><br />
 
-    <input type="submit" value="Send Message" />
+    <label for="fullname">Full Name:</label><br />
+    <input type="text" id="fullname" name="fullname" required /><br /><br />
+
+    <label for="address">Address:</label><br />
+    <input type="text" id="address" name="address" required /><br /><br />
+
+    <label for="city">City:</label><br />
+    <input type="text" id="city" name="city" required /><br /><br />
+
+    <label for="state">State:</label><br />
+    <select id="state" name="state" required>
+      <option value="">Select a state</option>
+      <option value="AL">Alabama</option>
+      <option value="AK">Alaska</option>
+      <option value="AZ">Arizona</option>
+      <option value="AR">Arkansas</option>
+      <option value="CA">California</option>
+      <option value="CO">Colorado</option>
+      <option value="CT">Connecticut</option>
+      <option value="DE">Delaware</option>
+      <option value="FL">Florida</option>
+      <option value="GA">Georgia</option>
+      <option value="HI">Hawaii</option>
+      <option value="ID">Idaho</option>
+      <option value="IL">Illinois</option>
+    </select><br /><br />
+
+    <label for="zip">ZIP Code:</label><br />
+    <input type="text" id="zip" name="zip" pattern="\d{5}" title="Enter a 5-digit ZIP code" required /><br /><br />
+
+    <label for="phone">Phone Number:</label><br />
+    <input type="tel" id="phone" name="phone" pattern="\d{10}" title="Enter a 10-digit phone number" required /><br /><br />
+
+    <label for="date">Creation Date:</label><br />
+    <input type="date" id="date" name="date" required /><br /><br />
+
+    <label for="message">Message (50–200 characters):</label><br />
+    <textarea id="message" name="message" minlength="50" maxlength="200" required></textarea><br /><br />
+
+    <fieldset>
+      <legend>Type of Inquiry:</legend>
+      <input type="radio" id="general" name="inquiry" value="General" required />
+      <label for="general">General</label><br />
+      <input type="radio" id="service" name="inquiry" value="Service" />
+      <label for="service">Service</label><br />
+      <input type="radio" id="sales" name="inquiry" value="Sales" />
+      <label for="sales">Sales</label><br />
+    </fieldset><br />
+
+    <fieldset>
+      <legend>Type of Item:</legend>
+      <input type="radio" id="watch" name="item" value="Watch" required />
+      <label for="watch">Watch</label><br />
+      <input type="radio" id="bike" name="item" value="Bike" />
+      <label for="bike">Bike</label><br />
+      <input type="radio" id="accessory" name="item" value="Accessory" />
+      <label for="accessory">Accessory</label><br />
+    </fieldset><br />
+
+    <input type="submit" value="Send" />
+    <input type="reset" value="Reset" />
   </form>
 
   <!-- Footer -->

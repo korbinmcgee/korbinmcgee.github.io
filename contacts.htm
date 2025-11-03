@@ -10,16 +10,28 @@
   <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   <script src="scripts/jquery.slicknav.min.js"></script>
 
-  <!-- 
-    Developer: Korbin McGee
-    University: Southern Illinois University
-    Page: Contact
-    Date Created: September 11, 2025
-    Date Updated: October 12, 2025
+  <!--
+    Assignment Instructions:
+    Add a validated contact form using GET method.
+    Fields required (in order):
+    1. Email
+    2. Password
+    3. Full Name
+    4. Address
+    5. City
+    6. State (Dropdown: A–I, must include Illinois)
+    7. ZIP
+    8. Phone Number
+    9. Creation Date
+    10. Message (50–200 characters)
+    11. Type of Inquiry (Radio)
+    12. Type of Item (Radio: watch, bike, etc.)
+    13. Send Button
+    14. Reset Button
+    15. Functional response page
   -->
 </head>
 <body>
-  <!-- Navigation Menu -->
   <nav>
     <ul id="menu">
       <li><a href="index.html">Home</a></li>
@@ -30,23 +42,11 @@
     </ul>
   </nav>
 
-  <!-- Main Graphic -->
   <img src="images/main-bike.jpg" alt="Main shop graphic" id="mainGraphic" />
 
-  <!-- Page Header -->
   <h1>Contact Us</h1>
   <p>We’d love to hear from you! Reach out with questions, feedback, or service requests.</p>
 
-  <!-- Contact Info -->
-  <address>
-    <strong>Korbin's Bicycle Shop</strong><br />
-    123 Cycle Lane<br />
-    Carbondale, IL 62901<br />
-    Phone: (618) 555-0123<br />
-    Email: <a href="mailto:info@korbinsbikeshop.com">info@korbinsbikeshop.com</a>
-  </address>
-
-  <!-- Contact Form -->
   <form action="response.html" method="get">
     <label for="email">Email:</label><br />
     <input type="email" id="email" name="email" required /><br /><br />
@@ -79,6 +79,8 @@
       <option value="HI">Hawaii</option>
       <option value="ID">Idaho</option>
       <option value="IL">Illinois</option>
+      <option value="IN">Indiana</option>
+      <option value="IA">Iowa</option>
     </select><br /><br />
 
     <label for="zip">ZIP Code:</label><br />
@@ -117,12 +119,10 @@
     <input type="reset" value="Reset" />
   </form>
 
-  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Korbin's Bicycle Shop</p>
   </footer>
 
-  <!-- SlickNav Initialization -->
   <script>
     $(function () {
       $('#menu').slicknav({ prependTo: 'nav', label: '' });

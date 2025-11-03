@@ -4,8 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Korbin's Bicycle Shop</title>
-  <meta name="description" content="Korbin's Bicycle Shop - Quality bikes and expert service in Carbondale, IL." />
-  <meta name="keywords" content="bicycle, bike shop, cycling, Korbin, Carbondale, repair, sales" />
   <link rel="stylesheet" href="styles/styles.css" />
   <link rel="stylesheet" href="styles/slicknav.css" />
   <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
@@ -13,13 +11,6 @@
   <script src="scripts/jquery.slicknav.min.js"></script>
 </head>
 <body>
-  <!-- Background Music Embed -->
-  <div class="audio-wrapper">
-    <iframe width="0" height="0" src="https://www.youtube.com/embed/dfeQ7witu7s?autoplay=1&mute=1&loop=1&playlist=dfeQ7witu7s" 
-      title="Relaxing Music" frameborder="0" allow="autoplay" allowfullscreen></iframe>
-  </div>
-
-  <!-- Navigation Menu -->
   <nav>
     <ul id="menu">
       <li><a href="index.html">Home</a></li>
@@ -30,12 +21,9 @@
     </ul>
   </nav>
 
-  <!-- Main Graphic with Rollover -->
   <img src="images/main-bike.jpg" alt="Main shop graphic" id="mainGraphic" />
-
   <h1>Welcome to Korbin's Bicycle Shop</h1>
   <p>We offer <strong>premium bicycles</strong> and <em>expert repair services</em> for all riders.</p>
-
   <address>123 Cycle Lane, Carbondale, IL 62901</address>
   <p>Contact: Korbin McGee</p>
 
@@ -46,7 +34,6 @@
   </ul>
 
   <img src="images/beach-bike.jpg" alt="Blue and silver bicycle near the beach" />
-
   <p>Our <span style="color:green;">eco-friendly bikes</span> are perfect for city commuting.</p>
 
   <footer>
@@ -55,7 +42,7 @@
 
   <script>
     $(function () {
-      $('#menu').slicknav({ prependTo: 'nav', label: '' });
+      $('#menu').slicknav({ prependTo: 'nav', label: '☰ Menu' });
     });
   </script>
 </body>
